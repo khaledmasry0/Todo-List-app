@@ -36,7 +36,6 @@ h1 {
 
 .TodoForm {
   width: 100%;
-  /* border-radius: 1rem; */
 }
 
 .todo-input {
@@ -89,4 +88,21 @@ h1 {
 .completed {
   color: #c5aeff;
   text-decoration: line-through;
+}
+
+@media screen and (max-width: 475px) {
+  .TodoWrapper {
+    padding: 1rem;
+  }
+  .TodoForm {
+    width: 100%;
+    border-radius: 1rem;
+    display: flex;
+    height: 2.5rem;
+    margin: 1rem 0;
+  }
+  .todo-input {
+    margin: 0;
+    width: fit-content;
+  }
 }
